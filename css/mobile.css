@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+body{
+    color: whitesmoke;
+    background-color: #101424;
+    margin: 0px;
+    font-family: 'Gothic A1', sans-serif;
+}
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.header-def-back{
+    background-color: #101424;
+}
+.header-nav-back{
+    background-color: #182434;
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header h1{
+    margin-left: 10px;
+}
+.alt-col{
+    color: #31b4eb;
+}
+#logo{
+    display: none;
+    height: 75px;
+    width: 75px;
+}
+#navbar-toggleButton{
+    display: block;
+    margin: 10px;
+}
+#navbar-toggleButton:hover{
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #31b4eb;
+    display: block;
+}
+.bar:nth-child(2){
+    background-color: whitesmoke;
+}
+.navbar{
+    font-weight: 600;
+    z-index: 999;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    float: right;
+    text-align: center;
+    border-top: 1px #31b4eb groove;
+    border-bottom: 1px #31b4eb groove;
+    background-color: #182434;
+}
+.navbar-links{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.navbar-links > li > a{
+    display: block;
+    margin: 1px;
+    padding:10px;
+    font-size: 20px;
+}
+.nav-sublist{
+    display: none;
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+    border-bottom: #31b4eb 1px groove;
+    margin: 1px;
+}
+.nav-sublist li a{
+    display: block;
+    margin: 1px;
+    padding:10px;
+    font-size: 20px;
+    text-align: center;
+}
+.drop{
+    text-decoration: underline;
+}
+main{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.sliderContainer{
+    margin: 15px 0;
+    width: 100%;
+}
+.sliderContainer img{
+    width: 98%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+.splitter{
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: 1px groove whitesmoke;
+}
+.content{
+    margin: 15px 5px;
+    background-color: #182434;
+    border-radius: 25px;
+    padding: 10px;
+}
+.content a{
+    color: #31b4eb;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0px;
+}
+.content a:hover{
+    border: 0.1px solid #31b4eb;
+    border-radius: 5px;
+}
+.content h2{
+    margin: 10px;
+}
+main p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+main h2, h3{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+footer{
+    border-top: 1px solid #ccc;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+footer h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+footer ul li{
+    padding: 3px;
+}
+footer > .footer-mid > ul > li > a{
+    text-decoration: none;
+    color: #31b4eb;
+    font-weight: 700;
+}
+footer > .footer-mid > ul > li > a:hover{
+    text-decoration: none;
+    border: 1px solid #31b4eb;
+    border-radius: 8px;
+    padding: 3px;
+}
+.footer-mid{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-mid > .map{
+    display: none;
+}
+.copyright{
+    font-style: italic;
+    text-align: center; 
+}
+.image-grid{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background-color: #182434;
+    padding: 5px;
+    margin: 15px 5px;
+    border-radius: 25px;
+}
+.image-grid img{
+    display: block;
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.grid-item{
+    width: 100%;
+}
+.grid-item p{
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+}
+#intro a:hover{
+    border: 0.1px solid #31b4eb;
+    border-radius: 5px;
+}
+#rules ol{
+    list-style: lower-roman;
+}
+#rules a{
+    color: #31b4eb;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0px;
+}
+#rules a:hover{
+    border: 0.1px solid #31b4eb;
+    border-radius: 5px;
+}
+#rules ol li{
+    padding: 2px;
+    margin-right: 5px;
+}
+#comment{
+    text-align: center;
+    font-size: 12px;
+    color: #31b4eb;
+    font-weight: 600;
+}
+.italic-bold{
+    font-style: italic;
+    font-weight: 600;
+}
+.info-collection{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.info-item{
+    margin: 10px;
+    background-color: #182434;
+    border-radius: 25px;
+}
+.info-item h3{
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.info-item ul li{
+   padding: 3px;
+   padding-right: 15px;
+}
+.dbase-view > .content{
+    display: flex;
+}
+.course-info-container{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.dbase-view > .content > .course-banner{
+    border: 2px groove #31b4eb;
+    border-radius: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.course-banner h3{
+    margin-left: 0;
+}
+.course-summary{
+    border: 2px groove #31b4eb;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 20px;
+    margin-left: 2px;
+}
+.recruit{
+    font-weight: 600;
+}
+#contact-us{
+    display: flex;
+    flex-direction: column;
+}
+#contact-us > .content p{
+    text-align: center;
+}
+form label{
+    display: block;
+    margin: 8px auto;
+    width: 90%;
+}
+.form-item > input{
+    height: 25px;
+}
+.form-item{
+    width: auto;
+    margin: 5px;
+}
+form > .form-item{
+    text-align: center;
+}
+#name-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#name-input label{
+    margin-left: 1px;
+}
+#email{
+    width: 92%;
+    margin: auto;
+    display: block;
+}
+#findus{
+    height: 25px;
+    display: block;
+    margin: auto;
+}
+#message{
+    width: 99%;
+    resize: none;
+}
+#updates{
+    display: block;
+    margin-right: 15px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 92%;
+    margin: auto;
+}
+#submit{
+    display: block;
+    margin: auto;
+    width: 75px;
+    height: 35px;
+}
+.infoPages img{
+    display: none;
+}
+#contact-us h3{
+    text-align: center;
+    margin: 10px;
+}
